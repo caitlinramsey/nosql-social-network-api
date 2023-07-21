@@ -94,7 +94,7 @@ const userController = {
             { $pull: { friends: params.friendId } },
             { new: true }
         )
-            .then((dbUserData) => res.json(dbUserData));
+            .then((dbUserData) => res.json(dbUserData))
             .catch((err) => res.json(err));
     },
 };
